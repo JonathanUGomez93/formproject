@@ -1,0 +1,11 @@
+*{
+    text-align: center;
+}
+.productsPreview img{
+    width: 20vw;
+    transition: 0.5s;
+}
+.productsPreview img:hover{
+    filter: drop-shadow(0 0 10px #800000);
+    scale: 1.05;
+}

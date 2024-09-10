@@ -1,6 +1,16 @@
+import '../../styles/home.css'
+
 const Home = () => {
     return (
-        <h1>home</h1>
+        <>
+            <h1>Grana Store</h1>
+            <div className='productsPreview'>
+                <img src="../images/train5.png" alt="" />
+                <img src="../images/train6.png" alt="" />
+                <img src="../images/train7.png" alt="" />
+                <img src="../images/train4.png" alt="" />
+            </div>
+        </>
     )
 }
 

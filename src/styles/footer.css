@@ -1,0 +1,19 @@
+footer{
+    text-align: center;
+}
+.socials-margin{
+    margin: 1rem;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+.socials img{
+    width: 40px;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.socials img:hover{
+    filter: grayscale(0%);
+    scale: 1.05;
+}

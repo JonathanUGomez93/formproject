@@ -1,11 +1,21 @@
+@import url('variables.css');
+
 *{
     text-align: center;
+    font-family: var(--text-font);
+    font-weight: var(--text-font-weight);
+}
+h1{
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+    font-size: 3rem;
+    margin-block: 2rem;
 }
 .productsPreview img{
     width: 20vw;
     transition: 0.5s;
 }
 .productsPreview img:hover{
-    filter: drop-shadow(0 0 10px #800000);
+    filter: drop-shadow(0 0 10px var(--main-color));
     scale: 1.05;
 }

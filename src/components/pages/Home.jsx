@@ -25,7 +25,7 @@ const Home = () => {
                         key={index}
                         src={src}
                         alt=""
-                        className={index === active ? 'active' : ''}
+                        className={index === active ? 'active' : 'inactive'}
                     />
                 ))}
             </div>

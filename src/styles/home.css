@@ -3,31 +3,13 @@
     text-align: center;
     font-family: var(--text-font);
     font-weight: var(--text-font-weight);
+    color: var(--white);
 }
 h1{
     font-family: var(--main-font);
     font-weight: var(--main-font-weight);
     font-size: 3rem;
     margin-bottom: 2rem;
-}
-.banner {
-    position: relative;
-    width: 80%;
-    height: 30vh;
-    overflow: hidden;
-    margin-inline: auto;
-}
-.banner img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    max-height: auto;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.banner img.active {
-    opacity: 1;
 }
 h2{
     font-size: 2.5rem;
@@ -39,10 +21,12 @@ h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 .productsPreview img{
-    width: 20%;
+    width: 40%;
     transition: 0.5s;
+    margin: 1rem;
 }
 .productsPreview img:hover{
     filter: drop-shadow(0 0 10px var(--main-color));
@@ -51,17 +35,13 @@ h2{
 }
 /* Media query */
 @media (min-width: 520px) {
-    .banner{
-        height: 40vh;
-    }
+
 }
-@media (min-width: 720px) {
-    .banner{
-        height: 45vh;
+@media (min-width: 620px) {
+    .productsPreview img{
+        width: 20%;
     }
 }
 @media (min-width: 1020px) {
-    .banner{
-        height: 70vh;
-    }
+
 }

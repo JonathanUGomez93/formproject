@@ -1,0 +1,41 @@
+@import url('variables.css');
+*{
+    text-align: center;
+    font-family: var(--text-font);
+    font-weight: var(--text-font-weight);
+}
+.banner {
+    position: relative;
+    width: 80%;
+    height: 30vh;
+    overflow: hidden;
+    margin-inline: auto;
+}
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.banner img.active {
+    opacity: 1;
+}
+/* Media query */
+@media (min-width: 520px) {
+    .banner{
+        height: 40vh;
+    }
+}
+@media (min-width: 720px) {
+    .banner{
+        height: 45vh;
+    }
+}
+@media (min-width: 1020px) {
+    .banner{
+        height: 70vh;
+    }
+}

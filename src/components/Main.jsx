@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
+import Account from "./pages/Account"
+import Products from "./pages/Products"
+import Detail from "./pages/ProductDetail"
 
 const Main = () => {
     return (
@@ -10,8 +11,9 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/account" element={<Account />} />
+                <Route path="products" element={<Products />} />
+                <Route path="products/:id" element={<Detail />} />
                 {/* route 404 */}
                 <Route path="*" element={<div>404</div>} />
             </Routes>

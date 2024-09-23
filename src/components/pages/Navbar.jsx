@@ -1,17 +1,8 @@
-import { Link } from "react-router-dom"
-import '../../styles/navbar.css'
+import DesktopNavbar from "./desktopNavbar"
 
 const Navbar = () => {
     return (
-        <>
-            <div className="navbar">
-                <Link to="/">Home</Link>
-                <Link to="/products">Productos</Link>
-                <Link to="/account">Cuenta</Link>
-            </div>
-        </>
+        <DesktopNavbar />
     )
-    //dropdown en productos separado por tipo de equipacion y cuenta llega a una pagina compartida de logueo/registro.
 }
-
 export default Navbar

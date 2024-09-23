@@ -1,0 +1,49 @@
+@import url('variables.css');
+
+.desktopNavbar {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2rem;
+}
+.desktopNavbar .navigation {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.navigation:hover {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+.navOptions {
+  position: relative;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: var(--white);
+  border-radius: 8px;
+  transition: display 1s;
+}
+.dropdownOptions {
+  display: flex;
+  flex-direction: column;
+}
+.dropdownOptions a {
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.navOptions:hover .dropdown {
+  display: block;
+}
+.dropdownOptions a:hover {
+    background-color: #e0dedb;
+  }

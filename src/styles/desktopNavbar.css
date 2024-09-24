@@ -19,15 +19,18 @@
 }
 .navOptions {
   position: relative;
+  z-index: 2;
 }
 .dropdown {
   display: none;
   position: absolute;
   top: 40px;
   right: 0px;
+  left: 0px;
   background-color: var(--white);
   border-radius: 8px;
   transition: display 1s;
+  margin: auto;
 }
 .dropdownOptions {
   display: flex;

@@ -10,12 +10,15 @@ const Main = () => {
         <main>
             <Routes>
                 <Route path="/" element={<Home />} />
+                {/* contacto, sólo accesible por footer */}
                 <Route path="/contact" element={<Contact />} />
+                {/* login y register en una misma vista */}
                 <Route path="/account" element={<Account />} />
-                <Route path="products" element={<Products />} />
-                <Route path="products/:id" element={<Detail />} />
+                {/* todos los productos y detalle */}
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:id" element={<Detail />} />
                 {/* route 404 */}
-                <Route path="*" element={<div>404</div>} />
+                <Route path="*" element={<h1>404</h1>} />
             </Routes>
         </main>
     )

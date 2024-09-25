@@ -9,7 +9,7 @@ function DesktopNavbar() {
         <p className="navigation">Indumentaria</p>
         <div className="dropdown">
           <div className="dropdownOptions">
-            <Link to="/shirts">Remeras</Link>
+            <Link to="/shirts">Urbano</Link>
             <Link to="/jersey">Equipación</Link>
             <Link to="/training">Deportivo</Link>
             <Link to="/products">Todo</Link>

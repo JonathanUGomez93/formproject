@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../../styles/mobileNavbar.css';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +13,14 @@ function MobileNavbar() {
   return (
     <>
       <div className='mobileNavbar'>
-        <button className='burgerIcon' onClick={toggleMenu}>X</button>
+        <button className='burgerIcon' onClick={toggleMenu}><GiHamburgerMenu />
+        </button>
       </div>
       <div className={`mobileMenuContainer ${isOpen ? 'open' : 'closed'}`}>
         <div className="mobileMenu">
-          <Link to="/shirts">Remeras</Link>
+          <button className="burgerIcon" onClick={toggleMenu}>X</button>
+          <Link to="/">Home</Link>
+          <Link to="/shirts">Urbano</Link>
           <Link to="/jersey">Equipación</Link>
           <Link to="/training">Deportivo</Link>
           <Link to="/products">Todo</Link>

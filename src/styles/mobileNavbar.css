@@ -13,7 +13,8 @@
     z-index: 2;
     display: none;
     right: 0;
-    background-color: var(--main-color);
+    top:0;
+    background-color: rgba(128, 0, 0, 0.5);
 }
 .mobileMenuContainer.open {
     display: block;
@@ -22,12 +23,20 @@
     display: none;
 }
 .mobileMenu {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
+    height: 100vh;
 }
 .mobileMenu a{
-    text-align: start;
+    text-align: end;
     text-decoration: none;
+    padding-left: 0.5rem;
     padding-block: 0.5rem;
+}
+.mobileMenu button{
+    text-align: end;
+    text-decoration: none;
+    padding-left: 0.5rem;
 }

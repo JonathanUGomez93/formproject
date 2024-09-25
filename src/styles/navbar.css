@@ -1,5 +1,10 @@
 .desktop{
     display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #0d0d0d;
 }
 /*media queries*/
 /*tablet*/

@@ -20,9 +20,9 @@ function MobileNavbar() {
         <div className="mobileMenu">
           <button className="burgerIcon" onClick={toggleMenu}>X</button>
           <Link to="/">Home</Link>
-          <Link to="/shirts">Urbano</Link>
-          <Link to="/jersey">Equipación</Link>
-          <Link to="/training">Deportivo</Link>
+          <Link to="/products/urbano">Urbano</Link>
+          <Link to="/products/equipacion">Equipación</Link>
+          <Link to="/products/deportivo">Deportivo</Link>
           <Link to="/products">Todo</Link>
         </div>
       </div>

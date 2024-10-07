@@ -6,6 +6,7 @@ const products = [
         talle: "M",
         precio: 37900,
         stock: 5,
+        categoria: "urbano",
         img: "/images/normal1.png"
     },
     {
@@ -14,6 +15,7 @@ const products = [
         talle: "L",
         precio: 37900,
         stock: 10,
+        categoria: "urbano",
         img: "/images/normal2.png"
     },
     {
@@ -22,6 +24,7 @@ const products = [
         talle: "XL",
         precio: 79900,
         stock: 4,
+        categoria: "equipacion",
         img: "/images/play1.png"
     },
     {
@@ -30,6 +33,7 @@ const products = [
         talle: "S",
         precio: 79900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/play2.png"
     },
     {
@@ -38,6 +42,7 @@ const products = [
         talle: "S",
         precio: 79900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/play3.png"
     },
     {
@@ -46,6 +51,7 @@ const products = [
         talle: "S",
         precio: 79900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/play4.png"
     },
     {
@@ -54,6 +60,7 @@ const products = [
         talle: "S",
         precio: 79900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/play5.png"
     },
     {
@@ -62,6 +69,7 @@ const products = [
         talle: "S",
         precio: 45900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/shortplay1.png"
     },
     {
@@ -70,6 +78,7 @@ const products = [
         talle: "S",
         precio: 45900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/shortplay2.png"
     },
     {
@@ -78,6 +87,7 @@ const products = [
         talle: "S",
         precio: 45900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/shortplay3.png"
     },
     {
@@ -86,6 +96,7 @@ const products = [
         talle: "S",
         precio: 45900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/shortplay4.png"
     },
     {
@@ -94,6 +105,7 @@ const products = [
         talle: "S",
         precio: 45900,
         stock: 3,
+        categoria: "equipacion",
         img: "/images/shortplay5.png"
     },
     {
@@ -102,6 +114,7 @@ const products = [
         talle: "S",
         precio: 89900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train1.png"
     },
     {
@@ -110,6 +123,7 @@ const products = [
         talle: "S",
         precio: 89900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train2.png"
     },
     {
@@ -118,6 +132,7 @@ const products = [
         talle: "S",
         precio: 89900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train3.png"
     },
     {
@@ -126,6 +141,7 @@ const products = [
         talle: "S",
         precio: 65900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train4.png"
     },
     {
@@ -134,6 +150,7 @@ const products = [
         talle: "S",
         precio: 49900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train5.png"
     },
     {
@@ -142,6 +159,7 @@ const products = [
         talle: "S",
         precio: 49900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train6.png"
     },
     {
@@ -150,6 +168,7 @@ const products = [
         talle: "S",
         precio: 49900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train7.png"
     },
     {
@@ -158,6 +177,7 @@ const products = [
         talle: "S",
         precio: 40900,
         stock: 3,
+        categoria: "deportivo",
         img: "/images/train8.png"
     },
     {
@@ -166,6 +186,7 @@ const products = [
         talle: "-",
         precio: 5900,
         stock: 3,
+        categoria: "parche",
         img: "/images/patch1.png"
     },
     {
@@ -174,6 +195,7 @@ const products = [
         talle: "-",
         precio: 3900,
         stock: 3,
+        categoria: "parche",
         img: "/images/patch2.png"
     },
   ];

@@ -9,14 +9,17 @@ const Main = () => {
     return (
         <main>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home/>} />
                 {/* contacto, sólo accesible por footer */}
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/contact" element={<Contact/>} />
                 {/* login y register en una misma vista */}
-                <Route path="/account" element={<Account />} />
-                {/* todos los productos y detalle */}
-                <Route path="/products" element={<Products />} />
-                <Route path="/products/:id" element={<Detail />} />
+                <Route path="/account" element={<Account/>} />
+                {/* todos los productos */}
+                <Route path="/products" element={<Products/>} />
+                {/* todos los productos */}
+                <Route path="/products/:cat" element={<Products/>} />
+                {/* todos los productos */}
+                <Route path="/item/:id" element={<Detail/>} />
                 {/* route 404 */}
                 <Route path="*" element={<h1>404</h1>} />
             </Routes>

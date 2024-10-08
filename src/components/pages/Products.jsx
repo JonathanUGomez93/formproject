@@ -1,5 +1,6 @@
 import products from "../utils/products";
 import { useParams } from "react-router-dom";
+import Card from "../utils/Card";
 
 function Products() {
   const { cat } = useParams();
@@ -9,13 +10,13 @@ function Products() {
     <div>
       {filteredProducts.length > 0 ? (
         filteredProducts.map((producto, index) => (
-          <div key={index}>
-            <h2>{producto.nombre}</h2>
-            <p>Talle: {producto.talle}</p>
-            <p>Precio: ${producto.precio}</p>
-            <p>Color: {producto.color}</p>
-            <img src={producto.img} alt={producto.nombre} />
-          </div>
+          < Card
+            key={index}
+            nombre={producto.nombre}
+            talle={producto.talle}
+            precio={producto.precio}
+            img={producto.img}
+          />
         ))
       ) : (
         <p>No hay productos disponibles en esta categoría.</p>

@@ -17,7 +17,7 @@ const Main = () => {
                 {/* todos los productos */}
                 <Route path="/products" element={<Products/>} />
                 {/* todos los productos */}
-                <Route path="/products/:cat" element={<Products/>} />
+                <Route path="/products/:category" element={<Products/>} />
                 {/* todos los productos */}
                 <Route path="/item/:id" element={<Detail/>} />
                 {/* route 404 */}

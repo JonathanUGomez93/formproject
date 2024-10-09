@@ -1,0 +1,22 @@
+@import url('variables.css');
+.productsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cardContainer{
+    width: 40%;
+    border: solid 2px white;
+    margin-block: 10px;
+}
+.cardImg{
+    width: 100%;
+}
+/*tablet*/
+@media (min-width: 520px){
+
+}
+/*desktop*/
+@media (min-width: 1280px){
+
+}

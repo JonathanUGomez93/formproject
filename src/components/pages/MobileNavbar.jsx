@@ -13,7 +13,8 @@ function MobileNavbar() {
   return (
     <>
       <div className='mobileNavbar'>
-        <button className='burgerIcon' onClick={toggleMenu}><GiHamburgerMenu />
+        <button className={`burgerIcon ${isOpen ? 'visibility' : ''}`} onClick={toggleMenu}>
+          <GiHamburgerMenu />
         </button>
       </div>
       <div className={`mobileMenuContainer ${isOpen ? 'open' : 'closed'}`}>

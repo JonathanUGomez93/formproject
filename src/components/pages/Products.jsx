@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import Card from "../utils/Card";
 
 function Products() {
-  const { cat } = useParams();
-  const filteredProducts = cat ? products.filter(producto => producto.categoria === cat): products;
+  const { category } = useParams();
+  const filteredProducts = category ? products.filter(producto => producto.categoria === category): products;
 
   return (
-    <div>
+    <div className="productsContainer">
       {filteredProducts.length > 0 ? (
         filteredProducts.map((producto, index) => (
           < Card

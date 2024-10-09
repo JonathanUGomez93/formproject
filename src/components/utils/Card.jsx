@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import '../../styles/card.css'
 
 function Card({ nombre, talle, precio, img }) {
     return (
         <>
-            <div>
-                <h2>{nombre}</h2>
+            <div className='cardContainer'>
+                <p className='cardName'>{nombre}</p>
                 <p>Talle: {talle}</p>
-                <p>Precio: ${precio}</p>
-                <img src={img} alt={nombre} />
+                <p className='cardPrice'>Precio: ${precio}</p>
+                <img className='cardImg' src={img} alt={nombre} />
             </div>
         </>
     )

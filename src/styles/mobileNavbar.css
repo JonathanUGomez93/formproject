@@ -14,7 +14,7 @@
     display: none;
     right: 0;
     top:0;
-    background-color: rgba(128, 0, 0, 0.5);
+    background-color: rgba(128, 0, 0, 0.8);
 }
 .mobileMenuContainer.open {
     display: block;
@@ -39,4 +39,7 @@
     text-align: end;
     text-decoration: none;
     padding-left: 0.5rem;
+}
+.visibility{
+    visibility: hidden;
 }

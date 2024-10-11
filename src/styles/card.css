@@ -5,12 +5,25 @@
     flex-wrap: wrap;
 }
 .cardContainer{
+    all: unset;
     width: 40%;
-    border: solid 2px white;
     margin-block: 10px;
+    border: solid 1px var(--main-color);
+}
+.cardInfo{
+    color: var(--white);
+    font-size: 0.8rem;
+}
+.cardPrice{
+    font-size: 1.1rem;
 }
 .cardImg{
     width: 100%;
+    transition: all 0.5s;
+    border: solid 1px var(--main-color);
+}
+.cardImg:hover{
+    filter: drop-shadow(0 0 10px var(--main-color));
 }
 /*tablet*/
 @media (min-width: 520px){

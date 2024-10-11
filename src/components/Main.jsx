@@ -16,9 +16,9 @@ const Main = () => {
                 <Route path="/account" element={<Account/>} />
                 {/* todos los productos */}
                 <Route path="/products" element={<Products/>} />
-                {/* todos los productos */}
+                {/* todos los productos de una categoria */}
                 <Route path="/products/:category" element={<Products/>} />
-                {/* todos los productos */}
+                {/* detalle del producto */}
                 <Route path="/item/:id" element={<Detail/>} />
                 {/* route 404 */}
                 <Route path="*" element={<h1>404</h1>} />

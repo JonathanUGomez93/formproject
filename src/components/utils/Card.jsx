@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 import '../../styles/card.css'
+import { Link } from 'react-router-dom';
 
-function Card({ nombre, talle, precio, img }) {
+function Card({ id, nombre, precio, img }) {
     return (
         <>
-            <div className='cardContainer'>
-                <p className='cardName'>{nombre}</p>
-                <p>Talle: {talle}</p>
-                <p className='cardPrice'>Precio: ${precio}</p>
+            <Link className='cardContainer' to={`/item/${id}`}>
                 <img className='cardImg' src={img} alt={nombre} />
-            </div>
+                <p className='cardInfo'>{nombre}</p>
+                <p><span className='cardPrice'>${precio}</span></p>
+            </Link>
         </>
     )
 }
 Card.propTypes = {
+    id: PropTypes.number.isRequired,
     nombre: PropTypes.string.isRequired,
-    talle: PropTypes.string.isRequired,
     precio: PropTypes.number.isRequired,
     img: PropTypes.string.isRequired,
 };

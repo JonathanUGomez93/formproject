@@ -12,6 +12,7 @@ function Products() {
         filteredProducts.map((producto, index) => (
           < Card
             key={index}
+            id={producto.id}
             nombre={producto.nombre}
             talle={producto.talle}
             precio={producto.precio}

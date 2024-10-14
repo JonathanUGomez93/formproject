@@ -2,7 +2,7 @@
 const products = [
     {
         id: 1,
-        nombre: "REMERA VIAJE COMBINADA ERREA 2024",
+        nombre: "VIAJE COMBINADA 2024",
         talle: "M",
         precio: 37900,
         stock: 5,
@@ -11,7 +11,7 @@ const products = [
     },
     {
         id: 2,
-        nombre: "REMERA VIAJE GRANATE ERREA 2024",
+        nombre: "VIAJE GRANATE 2024",
         talle: "L",
         precio: 37900,
         stock: 10,
@@ -20,7 +20,7 @@ const products = [
     },
     {
         id: 3,
-        nombre: "CAMISETA JUEGO ARQUERO ERREA 2024 3 ER MODELO",
+        nombre: "ARQUERO ALTERNATIVA MOD 2",
         talle: "XL",
         precio: 79900,
         stock: 4,
@@ -29,7 +29,7 @@ const products = [
     },
     {
         id: 4,
-        nombre: "CAMISETA JUEGO TITULAR ERREA 2024",
+        nombre: "TITULAR ERREA 2024",
         talle: "S",
         precio: 79900,
         stock: 3,
@@ -38,7 +38,7 @@ const products = [
     },
     {
         id: 5,
-        nombre: "CAMISETA JUEGO ALTERNATIVA ERREA 2024",
+        nombre: "ALTERNATIVA ERREA 2024",
         talle: "S",
         precio: 79900,
         stock: 3,
@@ -47,7 +47,7 @@ const products = [
     },
     {
         id: 6,
-        nombre: "CAMISETA JUEGO ARQUERO ALTERNATIVA ERREA 2024",
+        nombre: "ARQUERO ALTERNATIVA MOD 3",
         talle: "S",
         precio: 79900,
         stock: 3,
@@ -56,7 +56,7 @@ const products = [
     },
     {
         id: 7,
-        nombre: "CAMISETA JUEGO ARQUERO TITULAR ERREA 2024",
+        nombre: "ARQUERO TITULAR",
         talle: "S",
         precio: 79900,
         stock: 3,
@@ -65,7 +65,7 @@ const products = [
     },
     {
         id: 8,
-        nombre: "SHORT JUEGO ALTERNATIVO ERREA 2024",
+        nombre: "SHORT ALTERNATIVO",
         talle: "S",
         precio: 45900,
         stock: 3,
@@ -74,7 +74,7 @@ const products = [
     },
     {
         id: 9,
-        nombre: "SHORT JUEGO ARQUERO 3ER MODELO ERREA 2024",
+        nombre: "SHORT ARQUERO 3ER MODELO",
         talle: "S",
         precio: 45900,
         stock: 3,
@@ -83,7 +83,7 @@ const products = [
     },
     {
         id: 10,
-        nombre: "SHORT JUEGO ARQUERO TITULAR ERREA 2024",
+        nombre: "SHORT ARQUERO TITULAR",
         talle: "S",
         precio: 45900,
         stock: 3,
@@ -92,7 +92,7 @@ const products = [
     },
     {
         id: 11,
-        nombre: "SHORT JUEGO ARQUERO ALTERNATIVO ERREA 2024",
+        nombre: "SHORT ARQUERO ALTERNATIVO",
         talle: "S",
         precio: 45900,
         stock: 3,
@@ -101,7 +101,7 @@ const products = [
     },
     {
         id: 12,
-        nombre: "SHORT JUEGO TITULAR ERREA 2024",
+        nombre: "SHORT TITULAR",
         talle: "S",
         precio: 45900,
         stock: 3,
@@ -110,7 +110,7 @@ const products = [
     },
     {
         id: 13,
-        nombre: "BUZO ENTRENAMIENTO OFF WHITE ERREA 2024",
+        nombre: "BUZO ENTRENAMIENTO OFF WHITE",
         talle: "S",
         precio: 89900,
         stock: 3,
@@ -119,7 +119,7 @@ const products = [
     },
     {
         id: 14,
-        nombre: "BUZO ENTRENAMIENTO GRANATE ERREA 2024",
+        nombre: "BUZO ENTRENAMIENTO GRANATE",
         talle: "S",
         precio: 89900,
         stock: 3,
@@ -128,7 +128,7 @@ const products = [
     },
     {
         id: 15,
-        nombre: "PANTALON ENTRENAMIENTO AZUL ERREA 2024",
+        nombre: "PANTALON ENTRENAMIENTO AZUL",
         talle: "S",
         precio: 89900,
         stock: 3,
@@ -137,7 +137,7 @@ const products = [
     },
     {
         id: 16,
-        nombre: "CAMISETA PREMATCH AZUL ERREA 2024",
+        nombre: "CAMISETA PREMATCH AZUL",
         talle: "S",
         precio: 65900,
         stock: 3,
@@ -146,7 +146,7 @@ const products = [
     },
     {
         id: 17,
-        nombre: "REMERA ENTRENAMIENTO OFF WHITE ERREA 2024",
+        nombre: "REMERA ENTRENAMIENTO OFF WHITE",
         talle: "S",
         precio: 49900,
         stock: 3,
@@ -155,7 +155,7 @@ const products = [
     },
     {
         id: 18,
-        nombre: "REMERA ENTRENAMIENTO GRANATE ERREA 2024",
+        nombre: "REMERA ENTRENAMIENTO GRANATE",
         talle: "S",
         precio: 49900,
         stock: 3,
@@ -164,7 +164,7 @@ const products = [
     },
     {
         id: 19,
-        nombre: "REMERA ENTRENAMIENTO AZUL ERREA 2024",
+        nombre: "REMERA ENTRENAMIENTO AZUL",
         talle: "S",
         precio: 49900,
         stock: 3,
@@ -173,7 +173,7 @@ const products = [
     },
     {
         id: 20,
-        nombre: "SHORT ENTRENAMIENTO GRANATE ERREA 2024",
+        nombre: "SHORT ENTRENAMIENTO GRANATE",
         talle: "S",
         precio: 40900,
         stock: 3,

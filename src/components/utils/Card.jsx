@@ -7,8 +7,10 @@ function Card({ id, nombre, precio, img }) {
         <>
             <Link className='cardContainer' to={`/item/${id}`}>
                 <img className='cardImg' src={img} alt={nombre} />
-                <p className='cardInfo'>{nombre}</p>
-                <p><span className='cardPrice'>${precio}</span></p>
+                <div className='cardInfo'>
+                    <p className='cardName'>{nombre}</p>
+                    <p><span className='cardPrice'>${precio}</span></p>
+                </div>
             </Link>
         </>
     )

@@ -15,10 +15,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100%;
     max-height: auto;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    aspect-ratio: 10 / 5;
+    width: 100%;
 }
 .banner img.active {
     opacity: 1;

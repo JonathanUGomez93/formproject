@@ -7,10 +7,17 @@
 .cardContainer{
     all: unset;
     width: 40%;
-    margin-block: 10px;
-    border: solid 1px var(--main-color);
+    margin-block: 1rem;
+    cursor: pointer;
 }
 .cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.cardName{
     color: var(--white);
     font-size: 0.8rem;
 }
@@ -18,18 +25,22 @@
     font-size: 1.1rem;
 }
 .cardImg{
-    width: 100%;
+    width: 80%;
     transition: all 0.5s;
-    border: solid 1px var(--main-color);
+    border: 1px solid #1a1a1a;
 }
 .cardImg:hover{
     filter: drop-shadow(0 0 10px var(--main-color));
 }
 /*tablet*/
 @media (min-width: 520px){
-
+    .cardContainer{
+        width: 30%;
+    }
 }
 /*desktop*/
 @media (min-width: 1280px){
-
+    .cardContainer{
+        width: 24%;
+    }
 }

@@ -4,9 +4,9 @@ import Banner from '../Banner'
 const Home = () => {
     return (
         <>
-            <h1>Grana Store</h1>
+            <h1 className='projectTitle'>Grana Store</h1>
             <Banner />
-            <h2>Productos destacados</h2>
+            <h2 className='projectTitle'>Productos destacados</h2>
             <div className='productsPreview'>
                 <img src="../images/train5.png" alt="camiseta lanus" />
                 <img src="../images/train6.png" alt="camiseta alternativa" />

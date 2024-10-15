@@ -1,0 +1,29 @@
+@import url('variables.css');
+.detailTitle{
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+    margin-block: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productInformation{
+    width: 60%;
+}
+.productInformation img{
+    width: 100%;
+}
+.productInteraction{
+    width: 40%;
+}
+/*tablet*/
+@media (min-width: 520px){
+
+}
+/*desktop*/
+@media (min-width: 1280px){
+
+}

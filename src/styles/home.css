@@ -5,17 +5,11 @@
     font-weight: var(--text-font-weight);
     color: var(--white);
 }
-h1{
+.projectTitle{
     font-family: var(--main-font);
     font-weight: var(--main-font-weight);
     font-size: clamp(2rem, 2vw + 1rem, 3rem);
     margin-bottom: 2rem;
-}
-h2{
-    font-size: clamp(2rem, 2vw + 1rem, 3rem);
-    margin-bottom: 2rem;
-    font-family: var(--main-font);
-    font-weight: var(--main-font-weight);
 }
 .productsPreview{
     display: flex;

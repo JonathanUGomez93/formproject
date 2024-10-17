@@ -8,7 +8,12 @@
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.itemButton{
+    all: unset;
+    color: var(--white);
+    margin-inline: 1rem;
+    cursor: pointer;
 }
 .productInformation{
     width: 60%;
@@ -18,6 +23,20 @@
 }
 .productInteraction{
     width: 40%;
+}
+.productPrice{
+    font-size: 1.5rem;
+}
+.itemCount{
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+}
+.buyButton{
+    all: unset;
+    color: var(--white);
+    margin-top: 2rem;
+    cursor: pointer;
 }
 /*tablet*/
 @media (min-width: 520px){

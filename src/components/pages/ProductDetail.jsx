@@ -1,5 +1,6 @@
 import '../../styles/detail.css'
 import products from '../utils/products'
+import ItemCount from '../utils/ItemCount'
 import { useParams } from 'react-router-dom'
 
 function Detail() {
@@ -15,7 +16,10 @@ function Detail() {
           <img src={product.img} alt={product.nombre} />
         </div>
         <div className='productInteraction'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eum aliquam vero veniam et numquam velit. Nisi quo perferendis error excepturi fuga nostrum assumenda ea odio quam id! Quisquam, rem?
+          <div className='productPrice'>$ {product.precio} c/u</div>
+          <ItemCount />
+          <div>Stock Disponible: {product.stock}</div>
+          <button className='buyButton'>COMPRAR</button>
         </div>
       </div>
     </>

@@ -16,7 +16,15 @@ function DesktopNavbar() {
           </div>
         </div>
       </div>
-      <Link className="navigation" to="/account">Cuenta</Link>
+      <div className="navOptions">
+        <p className="navigation">Cuenta</p>
+        <div className="dropdown">
+          <div className="dropdownOptions">
+            <Link to="/account">Mi Cuenta</Link>
+            <Link to="/cart">Mi Carrito(0)</Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

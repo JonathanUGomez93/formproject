@@ -25,6 +25,8 @@ function MobileNavbar() {
           <Link to="/products/equipacion">Equipación</Link>
           <Link to="/products/deportivo">Deportivo</Link>
           <Link to="/products">Todo</Link>
+          <Link to="/account">Mi Cuenta</Link>
+          <Link to="/cart">Carrito(0)</Link>
         </div>
       </div>
     </>

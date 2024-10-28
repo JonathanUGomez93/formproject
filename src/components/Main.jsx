@@ -4,6 +4,7 @@ import Contact from "./pages/Contact"
 import Account from "./pages/Account"
 import Products from "./pages/Products"
 import Detail from "./pages/ProductDetail"
+import Cart from "./pages/Cart"
 
 const Main = () => {
     return (
@@ -13,7 +14,9 @@ const Main = () => {
                 {/* contacto, sólo accesible por footer */}
                 <Route path="/contact" element={<Contact/>} />
                 {/* login y register en una misma vista */}
-                <Route path="/account" element={<Account/>} />
+                <Route path="/account" element={<Account />} />
+                {/* carrito de compras */}
+                <Route path="/cart" element={<Cart />} />
                 {/* todos los productos */}
                 <Route path="/products" element={<Products/>} />
                 {/* todos los productos de una categoria */}

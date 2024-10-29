@@ -16,13 +16,13 @@ function Detail() {
           <img src={product.img} alt={product.nombre} />
         </div>
         <div className='productInteraction'>
-          <div className='productPrice'>$ {product.precio} c/u</div>
+          <p className='productPrice'>$ {product.precio} c/u</p>
           <ItemCount />
-          <div>Stock Disponible: {product.stock}</div>
-          <button className='buyButton'>COMPRAR</button>
+          <p>Stock Disponible: {product.stock}</p>
+          <button className='addToCart'>Añadir al Carrito</button>
         </div>
       </div>
     </>
-    )
-  }
+  )
+}
 export default Detail

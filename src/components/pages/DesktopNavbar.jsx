@@ -21,7 +21,7 @@ function DesktopNavbar() {
         <div className="dropdown">
           <div className="dropdownOptions">
             <Link to="/account">Mi Cuenta</Link>
-            <Link to="/cart">Mi Carrito(0)</Link>
+            <Link to="/cart">Carrito(0)</Link>
           </div>
         </div>
       </div>

@@ -54,11 +54,47 @@
     background-color: var(--main-color);
     border-radius: 5px;
 }
+.productDescription{
+    opacity: .5;
+    margin-block: 1rem;
+}
 /*tablet*/
 @media (min-width: 520px){
-
+    .productInformation img{
+        width: 70%;
+        margin: auto;
+    }
+    .productDescription{
+        width: 70%;
+        text-align: left;
+    }
 }
 /*desktop*/
 @media (min-width: 1280px){
-
+    .container{
+        flex-direction: row;
+    }
+    .productInformation{
+        width: 50%;
+    }
+    .productInteraction{
+        width: 50%;
+        align-items: center;
+    }
+    .productInformation img{
+        width: 80%;
+    }
+    .productDescription{
+        width: 80%;
+        text-align: center;
+    }
+    .itemButton{
+        font-size: 1.5rem;
+    }
+    .value{
+        font-size: 1.5rem;
+    }
+    .addToCart{
+        font-size: 1.5rem;
+    }
 }

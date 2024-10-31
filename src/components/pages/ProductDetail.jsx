@@ -17,6 +17,7 @@ function Detail() {
         </div>
         <div className='productInteraction'>
           <p className='productPrice'>$ {product.precio} c/u</p>
+          <p className='productDescription'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quaerat at porro voluptatem, saepe labore placeat officia voluptatibus excepturi quos dicta repellendus. Velit quia eveniet deleniti corporis maiores non aliquam.</p>
           <ItemCount />
           <p>Stock Disponible: {product.stock}</p>
           <button className='addToCart'>Añadir al Carrito</button>

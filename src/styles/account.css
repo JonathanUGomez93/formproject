@@ -1,0 +1,55 @@
+@import url('variables.css');
+.accountTitle{
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+.login, .register {
+    border: 1px solid var(--main-color);
+    margin-block: 1rem;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+}
+.loginForm input{
+    width: 50%;
+    margin-inline: auto;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.submit{
+    color: var(--white);
+    background-color: var(--main-color);
+    width: 20%;
+    margin-inline: auto;
+    font-size: 1rem;
+    margin-block: 1rem;
+}
+.helper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.helper a{
+    all: unset;
+    cursor: pointer;
+    color: var(--white);
+    opacity: 0.5;
+    margin-bottom: 0.5rem;
+}
+/*tablet*/
+@media (min-width: 520px){
+
+}
+/*desktop*/
+@media (min-width: 1280px){
+    .login, .register {
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+    .login:hover, .register:hover,
+    .login:hover * , .register:hover * {
+        opacity: 1;
+    }
+}

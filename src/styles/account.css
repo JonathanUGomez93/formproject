@@ -1,4 +1,9 @@
 @import url('variables.css');
+.sectionTitle{
+    font-family: var(--main-font);
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .accountTitle{
     font-size: 2rem;
     margin-block: 1rem;
@@ -7,23 +12,27 @@
     border: 1px solid var(--main-color);
     margin-block: 1rem;
 }
-.loginForm{
+.accountForm{
     display: flex;
     flex-direction: column;
 }
-.loginForm input{
+.accountForm input{
     width: 50%;
     margin-inline: auto;
     color: var(--main-color);
     margin-bottom: 1rem;
 }
 .submit{
+    all: unset;
+    cursor: pointer;
     color: var(--white);
     background-color: var(--main-color);
     width: 20%;
     margin-inline: auto;
     font-size: 1rem;
     margin-block: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
 .helper{
     display: flex;
@@ -38,18 +47,31 @@
     opacity: 0.5;
     margin-bottom: 0.5rem;
 }
+/* register */
+
 /*tablet*/
 @media (min-width: 520px){
-
+    .accountContainer{
+        width: 70%;
+        margin-inline: auto;
+    }
 }
 /*desktop*/
 @media (min-width: 1280px){
     .login, .register {
         opacity: 0.5;
+        width: 45%;
+        margin-inline: 0.5rem;
         transition: all 0.5s;
     }
     .login:hover, .register:hover,
     .login:hover * , .register:hover * {
         opacity: 1;
+    }
+    .accountContainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }

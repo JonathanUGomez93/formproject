@@ -1,7 +1,10 @@
 import '../../styles/home.css'
 import Banner from '../Banner'
-
+// import { useContext } from 'react'
+// import { context } from "../CustomProvider"
 const Home = () => {
+    // const { nombre } = useContext(context);
+
     return (
         <>
             <h1 className='projectTitle'>Grana Store</h1>
@@ -13,6 +16,7 @@ const Home = () => {
                 <img src="../images/train7.png" alt="" />
                 <img src="../images/train4.png" alt="" />
             </div>
+            {/* <h1>{ nombre}</h1> */}
         </>
     )
 }

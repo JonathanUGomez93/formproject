@@ -1,13 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 export const context = createContext();
 const { Provider } = context;
 
 const CustomProvider = ({ children }) => {
-    const [users, setUsers] = useState([
-        { id: 1, name: "Jonathan" },
-    ]);
+    const [users, setUsers] = useState(() => {
+        const savedUsers = localStorage.getItem('users');
+        return savedUsers ? JSON.parse(savedUsers) : [
+            {
+                id: 1,
+                user: "Jonathan",
+                email: "jurielgomez_1993@hotmail.com",
+                password: "DameChamba2025",
+            },
+        ];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('users', JSON.stringify(users));
+    }, [users]);
 
     const agregarUsuario = (nuevoUsuario) => {
         setUsers([...users, nuevoUsuario]);
@@ -17,16 +29,13 @@ const CustomProvider = ({ children }) => {
         users,
         agregarUsuario,
     };
-
     return (
         <Provider value={providerValue}>
             {children}
         </Provider>
     );
 };
-
 CustomProvider.propTypes = {
     children: PropTypes.node.isRequired,
 };
-
 export default CustomProvider;

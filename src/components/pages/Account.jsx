@@ -5,7 +5,7 @@ import { useState, useContext, useEffect } from 'react';
 import { context } from "../CustomProvider"
 const Account = () => {
   //creacion de usuario:
-  const {users, agregarUsuario } = useContext(context);
+  const {users, agregarUsuario} = useContext(context);
   const [usuario, setUsuario] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,11 +17,13 @@ const Account = () => {
       user: usuario,
       email: email,
       password: password,
+      cart: []
     };
     agregarUsuario(nuevoUsuario);
     setUsuario('');
     setEmail('');
     setPassword('');
+    //un sistema de flag en el cual mando el id del usuario logueado a donde lo pueda obtener y muestro el cart sólo del user cuyo id coincida con eso. Si no hay coincidencia, lo mando a registrarse/loguearse
   };
 
   useEffect(() => {
@@ -49,6 +51,7 @@ const Account = () => {
     } else {
       console.log(logueado, "Usuario o contraseña incorrectos")
     }
+
   }
 
   return (

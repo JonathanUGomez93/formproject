@@ -13,6 +13,7 @@ const CustomProvider = ({ children }) => {
                 user: "Jonathan",
                 email: "jurielgomez_1993@hotmail.com",
                 password: "DameChamba2025",
+                cart: []
             },
         ];
     });
@@ -27,7 +28,7 @@ const CustomProvider = ({ children }) => {
 
     const providerValue = {
         users,
-        agregarUsuario,
+        agregarUsuario
     };
     return (
         <Provider value={providerValue}>

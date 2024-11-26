@@ -13,30 +13,49 @@ const CustomProvider = ({ children }) => {
                 user: "Jonathan",
                 email: "jurielgomez_1993@hotmail.com",
                 password: "DameChamba2025",
-                cart: []
+                cart: [],
+                logued: false
             },
         ];
+    });
+
+    const [loguedUser, setLoguedUser] = useState(() => {
+        const savedLoguedUser = localStorage.getItem('loguedUser');
+        return savedLoguedUser ? JSON.parse(savedLoguedUser) : null;
     });
 
     useEffect(() => {
         localStorage.setItem('users', JSON.stringify(users));
     }, [users]);
 
+    useEffect(() => {
+        localStorage.setItem('loguedUser', JSON.stringify(loguedUser));
+    }, [loguedUser]);
+
     const agregarUsuario = (nuevoUsuario) => {
         setUsers([...users, nuevoUsuario]);
     };
 
+    const logUser = (usuarioEncontrado) => {
+        setLoguedUser(usuarioEncontrado);
+    };
+
     const providerValue = {
         users,
-        agregarUsuario
+        loguedUser,
+        agregarUsuario,
+        logUser
     };
+
     return (
         <Provider value={providerValue}>
             {children}
         </Provider>
     );
 };
+
 CustomProvider.propTypes = {
     children: PropTypes.node.isRequired,
 };
+
 export default CustomProvider;

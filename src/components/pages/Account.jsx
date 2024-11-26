@@ -5,7 +5,7 @@ import { useState, useContext, useEffect } from 'react';
 import { context } from "../CustomProvider"
 const Account = () => {
   //creacion de usuario:
-  const {users, agregarUsuario} = useContext(context);
+  const {users,loguedUser, agregarUsuario, logUser} = useContext(context);
   const [usuario, setUsuario] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,43 +17,41 @@ const Account = () => {
       user: usuario,
       email: email,
       password: password,
-      cart: []
+      cart: [],
+      logued: false
     };
     agregarUsuario(nuevoUsuario);
     setUsuario('');
     setEmail('');
     setPassword('');
-    //un sistema de flag en el cual mando el id del usuario logueado a donde lo pueda obtener y muestro el cart sólo del user cuyo id coincida con eso. Si no hay coincidencia, lo mando a registrarse/loguearse
   };
 
   useEffect(() => {
     console.log("Usuarios Existentes",users);
   }, [users])
-  
 
   //logueo de usuario existente
-  const [logueado, setLogueado] = useState(false);
   const [loginMail, setLoginMail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
-
-  const handleLogin = (e) => { 
+  
+  const handleLogin = (e) => {
     e.preventDefault();
-    
+
+    const usuarioEncontrado = users.find((user) => user.email === loginMail && user.password === loginPassword);
+    if (usuarioEncontrado) {
+      usuarioEncontrado.logued = true;
+      logUser(usuarioEncontrado);
+      console.log("LOGUEADO CORRECTAMENTE");
+      console.log('Usuario logueado:', usuarioEncontrado);
+      console.log('Estado loguedUser:', usuarioEncontrado);
+    } else {
+      console.log("Usuario o contraseña incorrectos");
+    }
     setLoginMail("");
     setLoginPassword("");
-    console.log("loginMail: ", loginMail)
-    console.log("LoginPassword: ", loginPassword)
+  };
 
-    const usuarioEncontrado = users.find((user) => user.email === loginMail && user.password === loginPassword)
-    if (usuarioEncontrado) {
-      setLogueado(true);
-      console.log("LOGUEADO CORRECTAMENTE")
-    } else {
-      console.log(logueado, "Usuario o contraseña incorrectos")
-    }
-
-  }
-
+  useEffect(() => { console.log("Usuario logueado en el estado loguedUser:", loguedUser); }, [loguedUser]);
   return (
     <>
       <h1 className='sectionTitle'>Opciones de Cuenta</h1>
@@ -95,7 +93,7 @@ const Account = () => {
             <input type="password" placeholder='Crea una contraseña' value={password} onChange={(e) =>setPassword(e.target.value)} required />
             <label htmlFor="email">Correo Electrónico</label>
             <input type="email" placeholder='tumail@tumail.com' value={email} onChange={(e) => setEmail(e.target.value)} required />
-
+            
             <button type='submit' className='submit'>Crear Cuenta</button>
           </form>
         </div>

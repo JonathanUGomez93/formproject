@@ -3,8 +3,8 @@ import { context } from '../CustomProvider'
 import { useContext } from 'react'
 
 const Cart =() => {
-  const {users} = useContext(context)
-
+  const { users } = useContext(context)
+  //muestra sólo al user logueado
   return (
     <>
       <div>

@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../../styles/mobileNavbar.css';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { context } from '../CustomProvider'
+import { useContext } from 'react'
 
 function MobileNavbar() {
+  const { loguedUser } = useContext(context);
+  console.log(loguedUser)
+
+  const cartValue = loguedUser.cart.length
+  //ponerle el  useeffect a cartValue para que se redibuje cada vez que loguedUser.cart se modifique
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,7 +34,7 @@ function MobileNavbar() {
           <Link to="/products/deportivo">Deportivo</Link>
           <Link to="/products">Todo</Link>
           <Link to="/account">Cuenta</Link>
-          <Link to="/cart">Carrito(0)</Link>
+          <Link to="/cart">Carrito ({cartValue.lenght === 0 ? cartValue : "0"})</Link>
         </div>
       </div>
     </>

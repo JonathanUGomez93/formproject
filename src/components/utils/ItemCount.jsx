@@ -1,13 +1,6 @@
-import { useState } from "react"
-import products from '../utils/products'
-import { useParams } from 'react-router-dom'
+import PropTypes from "prop-types";
 
-function ItemCount() {
-
-    const { id } = useParams()
-    const product = products.find(product => product.id === parseInt(id))
-
-    const [value, setValue] = useState(1)
+function ItemCount({ value, setValue, product }) {
 
     const addItem = () => {
         if (value < product.stock) {
@@ -27,4 +20,10 @@ function ItemCount() {
         </div>
     )
 }
+ItemCount.propTypes = {
+    value: PropTypes.number.isRequired,
+    setValue: PropTypes.func.isRequired,
+    product: PropTypes.object.isRequired
+}
+
 export default ItemCount

@@ -1,0 +1,13 @@
+.itemsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+img{
+    width: 100%;
+}

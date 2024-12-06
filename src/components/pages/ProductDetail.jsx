@@ -21,8 +21,10 @@ function Detail() {
     } else {
       const productoToPush = {
         id: product.id,
+        img: product.img,
         name: product.nombre,
         quantity: value,
+        unitPrice: product.precio,
         totalPrice: product.precio * value
       }
       loguedUser.cart.push(productoToPush)
